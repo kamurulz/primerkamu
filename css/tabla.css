@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Abel", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+/*---------------------contenedor--------------------------*/
+.contenedor {
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: auto auto  20rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "contenido contenido contenido"
+    " footer footer footer";
+}
+/*---------------------header--------------------------*/
+.header figure img:hover {
+  background-color: #761826;
+}
+.tabla_de_posiciones:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.equipos:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.campeonato:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.contacto:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.contenedor .header {
+  width: 100%;
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #75161c;
+  padding: 0.5em;
+}
+.contenedor .header figure img {
+  padding: 1rem;
+  width: 6em;
+  height: 6em;
+}
+.contenedor .header a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: large;
+  }
+/*---------------------contenido--------------------------*/
+.contenedor .contenido {
+  width: 100%;
+  grid-area: contenido;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-image:url(bg04.jpg);
+}
+.posiciones{
+  width: 60%;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+.posiciones caption {
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+.posiciones thead th{
+  background-color: #eaa234;
+  border-bottom: solid 2px #761826;
+  padding: 1em;
+}
+.posiciones thead td{
+  background-color: #eaa234;
+  padding: 1em;
+  font-weight: bold;
+  border-bottom: solid 2px #761826;
+}
+.posiciones img{
+  width:30px;
+  height:30px;
+  padding: 0%;
+ }
+.posiciones tbody td {
+padding: 0.3em;
+ 
+}
+.posiciones tbody tr:nth-child(even){
+  background-color: #e4e0e0;
+}
+.posiciones tbody tr:hover td{
+  background-color: #761826;
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+}
+/*---------------------footer--------------------------*/
+.contenedor .footer {
+  height: auto;
+  width: 100%;
+  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #75161c;
+  color: white;
+  font-size: small;
+}
+.footer .botones {
+  display: flex;
+}
+.botones .facebook:hover {
+  color: white;
+  background-color: #75161c;
+}
+.botones .instagram:hover {
+  color: white;
+  background-color: #75161c;
+}
+.botones .twitter:hover {
+  color: white;
+  background-color: #75161c;
+}
+.botones .youtube:hover {
+  color: white;
+  background-color: #75161c;
+}
+.footer img {
+  padding-top: 0.6em;
+  width: 15em;
+  height: 4.5em;
+}
+.footer .botones a {
+  display: flex;
+  flex-wrap: wrap;
+  color: #eaa234;
+  padding: 1em 1em 1em;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.footer p {
+  color: white;
+  font-size: small;
+}
+.footer a:hover {
+  background-color: #75161c;
+}
+@media (max-width: 480px) {
+  .contenedor {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  .posiciones {
+    font-size: 0.55rem;
+  }
+}
+@media (max-width: 960px) {
+  .contenedor {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}

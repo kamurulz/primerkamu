@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: white;
+  font-family: "Abel", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+/*---------------------contenedor--------------------------*/
+.contenedor {
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: auto auto auto 20rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    "carrousel carrousel carrousel"
+    "contenido contenido contenido"
+    " footer footer footer";
+}
+/*---------------------header--------------------------*/
+.header figure img:hover {
+  background-color: #761826;
+}
+.tabla_de_posiciones:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.equipos:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.campeonato:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.contacto:hover {
+  color: #eaa234;
+  background-color: #761826;
+  font-weight: bold;
+}
+.contenedor .header {
+  width: 100%;
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #75161c;
+  padding: 0.5em;
+}
+.contenedor .header figure img {
+  padding: 1rem;
+  width: 6em;
+  height: 6em;
+}
+.contenedor .header a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: large;
+  }
+/*---------------------carrousel--------------------------*/
+.contenedor .carrousel {
+  width: 100%;
+  grid-area: carrousel;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://img.webme.com/pic/w/webcp/bg04.jpg");
+  position: relative;
+  margin: 0 auto;
+  padding: 1em;
+}
+.contenedor .carrousel .lista_imagenes {
+  width: 60%;
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 0.25rem 0.5rem black;
+  border-radius: 0.2rem;
+}
+.contenedor .carrousel .lista_imagenes img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.contenedor .carrousel .slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.contenedor .carrousel .slider-nav a {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+  margin: 1em;
+}
+.contenedor .carrousel .slider-nav:hover {
+  opacity: 100%;
+}
+/*---------------------contenido--------------------------*/
+.contenedor .contenido {
+  width: 100%;
+  grid-area: contenido;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-image: url(bg04.jpg);
+}
+.partidos {
+  width: 40%;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+.partidos caption {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.partidos a:hover{
+  color: black;
+  background-color: #761826;
+}
+.partidos thead th {
+  background-color: #eaa234;
+  border-bottom: solid 2px #761826;
+  padding: 1em;
+}
+
+.partidos img {
+  width: 30px;
+  height: 30px;
+  padding: 0%;
+}
+.partidos tbody td {
+  padding: 0.3em;
+}
+
+.partidos tbody th {
+  padding: 0.3em;
+  border-bottom: solid 2px #761826;
+}
+.partidos tbody tr:nth-child(even) {
+  background-color: #e4e0e0;
+}
+.partidos tbody tr:hover td {
+  background-color: #761826;
+  color: white;
+}
+.goleadores {
+  width: 40%;
+  border-collapse: collapse;
+  background-color: white;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+}
+.goleadores caption {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+}
+.goleadores thead th {
+  background-color: #eaa234;
+  border-bottom: solid 2px #761826;
+  padding: 1em;
+}
+.goleadores thead td {
+  background-color: #eaa234;
+  padding: 1em;
+  font-weight: bold;
+  border-bottom: solid 2px #761826;
+}
+.goleadores img {
+  width: 30px;
+  height: 30px;
+  padding: 0%;
+}
+.goleadores th,
+td {
+  padding: 0.3em;
+}
+.goleadores tbody tr:nth-child(even) {
+  background-color: #e4e0e0;
+}
+.goleadores tbody tr:hover td {
+  background-color: #761826;
+  color: white;
+}
+/*---------------------footer--------------------------*/
+.contenedor .footer {
+  height: auto;
+  width: 100%;
+  grid-area: footer;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #75161c;
+  color: white;
+  font-size: small;
+}
+.footer .botones {
+  display: flex;
+}
+.botones .facebook:hover {
+  color: white;
+  background-color: #75161c;
+}
+.botones .instagram:hover {
+  color: white;
+  background-color: #75161c;
+}
+.botones .twitter:hover {
+  color: white;
+  background-color: #75161c;
+}
+.botones .youtube:hover {
+  color: white;
+  background-color: #75161c;
+}
+.footer img {
+  padding-top: 0.6em;
+  width: 15em;
+  height: 4.5em;
+}
+.footer .botones a {
+  display: flex;
+  flex-wrap: wrap;
+  color: #eaa234;
+  padding: 1em 1em 1em;
+  text-decoration: none;
+  justify-content: space-between;
+}
+.footer p {
+  color: white;
+  font-size: small;
+}
+.footer a:hover {
+  background-color: #75161c;
+}
+/*media querys*/
+@media (max-width: 480px) {
+  .contenedor {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 960px) {
+  .contenedor {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+}
+/* @media(max-width:600px) {
+.contenedor{
+ grid-template-columns: 200px auto;
+ grid-template-rows: 100px auto 200px;
+ grid-template-areas: 
+ "header header" 
+"contenido contenido"
+"footer footer";
+}
+}
+@media(max-width:900px) {
+  .contenedor{
+  grid-template-columns: 200px auto;
+   grid-template-rows: 100px auto 200px;  
+   grid-template-areas: 
+   "header header header" 
+  "contenido contenido contenido"
+  "footer footer footer" 
+  }
+  } */
