@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="flaticon/flaticon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <figure>
+                <a class="home" href="index.html"><img src="img/logo final.png" alt="imagen" id="fefusa"></a>
+            </figure>
+            <a class="tabla_de_posiciones" href="tabla_de_posiciones.html">TABLA DE POSICIONES</a>
+            <a class="equipos" href="equipos.html">EQUIPOS</a>
+            <a class="campeonato" href="campeonato.html">CAMPEONATO</a>
+            <a class="contacto" href="contacto.html">CONTACTO</a>
+        </div>
+        <div class="contenido">
+        <div class="container-form">
+            <div class="info-form">
+                <h2>Contáctanos</h2>
+                <p>Por dudas o consultas, completa el formulario y en breve nos contactaremos para solucionar cualquier inconveniente.</p>
+                <p>Nuestro telefono de contacto y mail también estan disponibles:</p>
+                <a href="#"><i class="fa fa-phone"></i> 2614673269</a>
+                <a href="#"><i class="fa fa-envelope"></i> info@fefusa.com.ar</a>
+                <a href="#"><i class="fa fa-map-marked"></i> Mendoza, Argentina</a>
+            </div>
+            <form id="formulario" onsubmit="return validarFormulario()">
+                <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" class="campo">
+                <input type="text" id="email" name="email" placeholder="Tu Email" class="campo">
+                <textarea name="mensaje" id="mensaje" placeholder="Tu Mensaje..."></textarea>
+                <br>
+                <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </div>
+              
+        <div class="footer">
+            <a class="home" href="contacto.html"><img src="img/logoFefusaNegro.png" alt="imagen" id="fefusa"></a>
+            <div class="botones">
+                <a class="facebook" href="https://www.facebook.com/fefusamendoza/?locale=es_LA" target="_blank"><i
+                        class='bx bxl-facebook-square bx-md'></i></a>
+                <a class="instagram" href="https://www.instagram.com/fefusamendoza/" target="_blank"><i
+                        class='bx bxl-instagram-alt bx-md'></i></a>
+                <a class="twitter" href="https://twitter.com/fefusamza" target="_blank"><i
+                        class='bx bxl-twitter bx-md'></i></a>
+                <a class="youtube" href="https://www.youtube.com/@FEFUSATV/featured" target="_blank"><i
+                        class='bx bxl-youtube bx-md'></i></a>
+            </div>
+            <p>Copyright 2023 Fefusa Mendoza | Joaquín V. González 561, Capital, Mendoza | Martes a viernes de 09 a
+                17hs, sábados de 10 a 13 |</p>
+        </div>
+    </div>
+    <script src="js/contacto.js"></script>
+    </body>
+</html>
