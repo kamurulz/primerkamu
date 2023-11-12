@@ -24,8 +24,10 @@ body {
     " footer footer footer";
 }
 /*---------------------header--------------------------*/
-.header figure img:hover {
+.Index:hover {
+  color: #eaa234;
   background-color: #761826;
+  font-weight: bold;
 }
 .tabla_de_posiciones:hover {
   color: #eaa234;
