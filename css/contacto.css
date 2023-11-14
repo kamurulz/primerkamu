@@ -63,6 +63,14 @@ body {
   width: 6em;
   height: 6em;
 }
+
+.contenedor .header nav{
+  display: flex;
+}
+.contenedor .header nav .nav-items{
+  padding-top: 2.5rem;
+  display: flex;
+}
 .contenedor .header a {
   color: white;
   padding: 14px 20px;
@@ -208,19 +216,18 @@ body {
   background-color: #75161c;
 }
 /*media querys*/
-
-@media only screen and (max-width: 350px) {
-
-.conteiner-form form textarea {
-    width: 200px;
-    height: 100%;
-  }
-}
-
-@media (max-width: 480px) {
+@media (width < 480px) {
   .contenedor {
     flex-direction: column;
     flex-basis: 100%;
+  }
+
+  .contenedor .header nav .nav-items{
+    padding-top: 0;
+    display: block;
+  }
+  .contenedor .header nav .nav-items .nav-item a{
+    font-size: 12px;
   }
 }
 @media (max-width: 960px) {

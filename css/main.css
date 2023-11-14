@@ -59,6 +59,14 @@ body {
   background-color: #75161c;
   padding: 0.5em;
 }
+
+.contenedor .header nav{
+  display: flex;
+}
+.contenedor .header nav .nav-items{
+  padding-top: 2.5rem;
+  display: flex;
+}
 .contenedor .header figure img {
   padding: 1rem;
   width: 6em;
@@ -79,7 +87,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://img.webme.com/pic/w/webcp/bg04.jpg");
+  background-image: url(bg04.jpg);
   position: relative;
   margin: 0 auto;
   padding: 1em;
@@ -131,6 +139,9 @@ body {
   align-items: center;
   padding: 1rem;
   background-image: url(bg04.jpg);
+}
+.contenedor .contenido article{
+  display: contents;
 }
 .partidos {
   width: 40%;
@@ -270,10 +281,18 @@ td {
   background-color: #75161c;
 }
 /*media querys*/
-@media (max-width: 480px) {
+@media (width < 480px) {
   .contenedor {
     flex-direction: column;
     flex-basis: 100%;
+  }
+
+  .contenedor .header nav .nav-items{
+    padding-top: 0;
+    display: block;
+  }
+  .contenedor .header nav .nav-items .nav-item a{
+    font-size: 12px;
   }
 }
 @media (max-width: 960px) {

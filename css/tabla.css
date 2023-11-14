@@ -60,6 +60,13 @@ body {
   width: 6em;
   height: 6em;
 }
+.contenedor .header nav{
+  display: flex;
+}
+.contenedor .header nav .nav-items{
+  padding-top: 2.5rem;
+  display: flex;
+}
 .contenedor .header a {
   color: white;
   padding: 14px 20px;
@@ -172,13 +179,19 @@ padding: 0.3em;
 .footer a:hover {
   background-color: #75161c;
 }
-@media (max-width: 480px) {
+/*media querys*/
+@media (width < 480px) {
   .contenedor {
     flex-direction: column;
     flex-basis: 100%;
   }
-  .posiciones {
-    font-size: 0.55rem;
+
+  .contenedor .header nav .nav-items{
+    padding-top: 0;
+    display: block;
+  }
+  .contenedor .header nav .nav-items .nav-item a{
+    font-size: 12px;
   }
 }
 @media (max-width: 960px) {
