@@ -15,16 +15,30 @@
 
 <body>
     <div class="contenedor">
-        <div class="header">
-            <figure>
-                <a href="index.html"><img src="img/logo final.png" alt="imagen" id="fefusa"></a>
-            </figure>
-            <a class="Index" href="index.html">Incio</a>
-            <a class="tabla_de_posiciones" href="tabla_de_posiciones.html">TABLA DE POSICIONES</a>
-            <a class="equipos" href="equipos.html">EQUIPOS</a>
-            <a class="campeonato" href="campeonato.html">CAMPEONATO</a>
-            <a class="contacto" href="contacto.html">CONTACTO</a>
-        </div>
+        <header class="header">
+            <nav>
+                <figure>
+                    <a href="index.html"><img src="img/logo final.png" alt="imagen" id="fefusa"></a>
+                </figure>
+                <div class="nav-items">
+                    <div class="nav-item">
+                        <a class="Index" href="index.html">Incio</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="tabla_de_posiciones" href="tabla_de_posiciones.html">POSICIONES</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="equipos" href="equipos.html">EQUIPOS</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="campeonato" href="campeonato.html">CAMPEONATO</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="contacto" href="contacto.html">CONTACTO</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <div class="carrousel">
             <div class="lista_imagenes">
                 <img id="slider1" src="img/pelota.png" alt="imagen">
@@ -41,84 +55,90 @@
                 <a href="#slider5"></a>
             </div>
         </div>
-        <div class="contenido">
-            <table class="partidos">
-                <caption>
-                    <h2>FECHAS DE HOY</h2>
-                </caption>
-                <thead>
-                    <tr>
-                        <th colspan="6">TORNEO APERTURA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="img/C.U.C.png" alt="imagen" id="cuc"></td>
-                        <td>Cuc</td>
+        <main class="contenido">
+            <article>
+                <table class="partidos">
+                    <caption>
+                        <h2>FECHAS DE HOY</h2>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th colspan="6">TORNEO APERTURA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/C.U.C.png" alt="imagen" id="cuc"></td>
+                            <td>Cuc</td>
 
-                        <td>Talleres</td>
-                        <td><img src="img/talleres.png" alt="imagen" id="regatas"></td>
-                    </tr>
-                    <th colspan="6">Cancha: CUC <a href="https://maps.app.goo.gl/J2ggs2pcDeAK1MAU9" target="_blank"> Ver
-                            Ubicación</a></th>
-                    <tr>
-                        <td><img src="img/regatas.png" alt="imagen" id="regatas"></td>
-                        <td>Regatas</td>
+                            <td>Talleres</td>
+                            <td><img src="img/talleres.png" alt="imagen" id="regatas"></td>
+                        </tr>
+                        <th colspan="6">Cancha: CUC <a href="https://maps.app.goo.gl/J2ggs2pcDeAK1MAU9" target="_blank">
+                                Ver
+                                Ubicación</a></th>
+                        <tr>
+                            <td><img src="img/regatas.png" alt="imagen" id="regatas"></td>
+                            <td>Regatas</td>
 
-                        <td>Cementista</td>
-                        <td><img src="img/CEMENTISTA B.png" alt="imagen" id="regatas"></td>
-                    </tr>
-                    <th colspan="6">Cancha: Regatas <a href=https://maps.app.goo.gl/GTEEHVrRydwo5LPq9 target="_blank">
-                            Ver
-                            Ubicación</a></th>
-                </tbody>
-            </table>
-            <table class="goleadores">
-                <caption>
-                    <h2>GOLEADORES</h2>
-                </caption>
-                <thead>
-                    <tr>
-                        <th colspan="3">TORNEO APERTURA</th>
-                    </tr>
+                            <td>Cementista</td>
+                            <td><img src="img/CEMENTISTA B.png" alt="imagen" id="regatas"></td>
+                        </tr>
+                        <th colspan="6">Cancha: Regatas <a href=https://maps.app.goo.gl/GTEEHVrRydwo5LPq9
+                                target="_blank">
+                                Ver
+                                Ubicación</a></th>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <table class="goleadores">
+                    <caption>
+                        <h2>GOLEADORES</h2>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th colspan="3">TORNEO APERTURA</th>
+                        </tr>
 
 
-                    <tr>
+                        <tr>
 
-                        <td colspan="2">JUGADOR</td>
-                        <td>GOLES</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="img/C.U.C.png" alt="imagen" id="cuc"></td>
-                        <td>Nombre Jugador</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/talleres.png" alt="imagen" id="talleres"></td>
-                        <td>Nombre Jugador</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/regatas.png" alt="imagen" id="regatas"></td>
-                        <td>Nombre Jugador</td>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/regatas.png" alt="imagen" id="regatas"></td>
-                        <td>Nombre Jugador</td>
-                        <td>6</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/CEMENTISTA B.png" alt="imagen" id="Cementista"></td>
-                        <td>Nombre Jugador</td>
-                        <td>4</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="footer">
+                            <td colspan="2">JUGADOR</td>
+                            <td>GOLES</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/C.U.C.png" alt="imagen" id="cuc"></td>
+                            <td>Nombre Jugador</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/talleres.png" alt="imagen" id="talleres"></td>
+                            <td>Nombre Jugador</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/regatas.png" alt="imagen" id="regatas"></td>
+                            <td>Nombre Jugador</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/regatas.png" alt="imagen" id="regatas"></td>
+                            <td>Nombre Jugador</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/CEMENTISTA B.png" alt="imagen" id="Cementista"></td>
+                            <td>Nombre Jugador</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </main>
+        <footer class="footer">
             <a class="home" href="index.html"><img src="img/logoFefusaNegro.png" alt="imagen" id="fefusa"></a>
             <div class="botones">
                 <a class="facebook" href="https://www.facebook.com/fefusamendoza/?locale=es_LA" target="_blank"><i
@@ -132,7 +152,7 @@
             </div>
             <p>Copyright 2023 Fefusa Mendoza | Joaquín V. González 561, Capital, Mendoza | Martes a viernes de 09 a
                 17hs, sábados de 10 a 13 |</p>
-        </div>
+        </footer>
     </div>
 </body>
 

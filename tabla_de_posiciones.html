@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +12,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <title>tabla de posiciones</title>
 </head>
+
 <body>
     <div class="contenedor">
-        <div class="header">
-            <figure>
-                <a class="home" href="index.html"><img src="img/logo final.png" alt="imagen" id="fefusa"></a>
-            </figure>
-            <a class="Index" href="index.html">Incio</a>
-            <a class="tabla_de_posiciones" href="tabla_de_posiciones.html">TABLA DE POSICIONES</a>
-            <a class="equipos" href="equipos.html">EQUIPOS</a>
-            <a class="campeonato" href="campeonato.html">CAMPEONATO</a>
-            <a class="contacto" href="contacto.html">CONTACTO</a>
-        </div>
-        <div class="contenido">
+        <header class="header">
+            <nav>
+                <figure>
+                    <a href="index.html"><img src="img/logo final.png" alt="imagen" id="fefusa"></a>
+                </figure>
+                <div class="nav-items">
+                    <div class="nav-item">
+                        <a class="Index" href="index.html">Incio</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="tabla_de_posiciones" href="tabla_de_posiciones.html">POSICIONES</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="equipos" href="equipos.html">EQUIPOS</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="campeonato" href="campeonato.html">CAMPEONATO</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="contacto" href="contacto.html">CONTACTO</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="contenido">
+            <article>
             <table class="posiciones">
                 <caption>
                     <h2>TABLA DE POSICIONES</h2>
@@ -172,9 +189,11 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <div class="footer">
-            <a class="home" href="tabla_de_posiciones.html"><img src="img/logoFefusaNegro.png" alt="imagen" id="fefusa"></a>
+        </article>
+        </main>
+        <footer class="footer">
+            <a class="home" href="tabla_de_posiciones.html"><img src="img/logoFefusaNegro.png" alt="imagen"
+                    id="fefusa"></a>
             <div class="botones">
                 <a class="facebook" href="https://www.facebook.com/fefusamendoza/?locale=es_LA" target="_blank"><i
                         class='bx bxl-facebook-square bx-md'></i></a>
@@ -187,8 +206,9 @@
             </div>
             <p>Copyright 2023 Fefusa Mendoza | Joaquín V. González 561, Capital, Mendoza | Martes a viernes de 09 a
                 17hs, sábados de 10 a 13 |</p>
-        </div>
+        </footer>
     </div>
-   
+
 </body>
+
 </html>
